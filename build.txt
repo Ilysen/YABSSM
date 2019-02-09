@@ -1,0 +1,3 @@
+author = Ilysen
+version = 0.1
+displayName = Yet Another Boss Summon Shop Mod
