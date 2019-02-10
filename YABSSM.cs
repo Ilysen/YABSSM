@@ -8,16 +8,14 @@ namespace YABSSM
     {
 
     }
-}
 
-namespace YABSSM.NPCs
-{
     class YABSSMNPC : GlobalNPC
     {
         public override void SetupShop(int type, Chest shop, ref int nextSlot)
         {
             if (type == NPCID.Dryad)
             {
+                Player player;
                 if (NPC.downedSlimeKing)
                 {
                     shop.item[nextSlot].SetDefaults(ItemID.SlimeCrown);
@@ -59,7 +57,7 @@ namespace YABSSM.NPCs
                 }
                 if (Main.hardMode)
                 {
-                    shop.item[nextSlot].SetDefaults(ItemID.GuideVoodooDoll);
+                    shop.item[nextSlot].SetDefaults(mod.ItemType("InnocentBunny"));
                     shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 10, 0, 0);
                     nextSlot++;
                 }
@@ -79,6 +77,12 @@ namespace YABSSM.NPCs
                 {
                     shop.item[nextSlot].SetDefaults(ItemID.MechanicalSkull);
                     shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 10, 0, 0);
+                    nextSlot++;
+                }
+                if (NPC.downedPlantBoss)
+                {
+                    shop.item[nextSlot].SetDefaults(mod.ItemType("PepperyFruit"));
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 25, 0, 0);
                     nextSlot++;
                 }
                 if (NPC.downedGolemBoss)
@@ -101,8 +105,8 @@ namespace YABSSM.NPCs
                 }
                 if (NPC.downedMoonlord)
                 {
-                    shop.item[nextSlot].SetDefaults(ItemID.CelestialSigil);
-                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 50, 0, 0);
+                    shop.item[nextSlot].SetDefaults(mod.ItemType("CrackedRelic"));
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(1, 0, 0, 0);
                     nextSlot++;
                 }
             }

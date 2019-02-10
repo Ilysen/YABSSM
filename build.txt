@@ -1,4 +1,4 @@
 author = Ilysen
-version = 0.2
-displayName = Yet Another Boss Summon Shop Mod
+version = 0.3
+displayName = Yet Another Boss Summon Shop
 homepage = https://github.com/Xhuis/YABSSM

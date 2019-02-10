@@ -1,3 +1,5 @@
-YABSSM is a simple mod that makes the Dryad sell boss summoning items when you defeat the respective vanilla boss. The price for these items depends on the difficulty of the boss and placement for progression.
+YABSS is a simple mod that makes the Dryad sell boss summoning items when you defeat the respective vanilla boss. The price for these items depends on the difficulty of the boss and placement for progression.
+
+After defeating the Wall of Flesh, she will sell Innocent, Helpless Bunnies that can summon the Wall of Flesh without murdering the Guide. After defeating Plantera, she will sell a Peppery Fruit that summons her without need of a bulb. Finally, downing the Moon Lord will cause her to sell Cracked Relics that summon him instantly instead of after a delay.
 
 If you have a mod like Calamity that already has this function built in, you won't need this mod.
