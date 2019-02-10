@@ -91,6 +91,12 @@ namespace YABSSM
                     shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 25, 0, 0);
                     nextSlot++;
                 }
+                if (NPC.downedFishron)
+                {
+                    shop.item[nextSlot].SetDefaults(ItemID.TruffleWorm);
+                    shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 25, 0, 0);
+                    nextSlot++;
+                }
                 if (NPC.downedHalloweenTree)
                 {
                     shop.item[nextSlot].SetDefaults(ItemID.PumpkinMoonMedallion);
