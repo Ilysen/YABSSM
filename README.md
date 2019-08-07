@@ -10,7 +10,7 @@ If you have a mod like Calamity that already has this function built in, you won
 
 ### Aug. 7, 2019
 
-#### 1.0.0.0
+#### 1.0.0.2
 
 * Reduced the pricing of all items.
 * Fixed a bug where killing the Destroyer would unlock summoning items for The Twins (and vice-versa.)
