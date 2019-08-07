@@ -1,6 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace YABSSM.Items
 {
@@ -9,7 +10,7 @@ namespace YABSSM.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Innocent, Helpless Bunny");
-            Tooltip.SetDefault("Irresistible to evil demons");
+            Tooltip.SetDefault("Irresistible to evil demons\nSummons the Wall of Flesh, approaching from the left");
         }
 
         public override void SetDefaults()
@@ -32,8 +33,9 @@ namespace YABSSM.Items
 
         public override bool UseItem(Player player)
         {
-            NPC.SpawnOnPlayer(player.whoAmI, NPCID.WallofFlesh);
-            Main.PlaySound(SoundID.Roar, player.position, 0);
+            Vector2 wofSpawn = player.position;
+            NPC.SpawnWOF(wofSpawn);
+            Main.PlaySound(SoundID.Roar, wofSpawn, 0);
             return true;
         }
     }

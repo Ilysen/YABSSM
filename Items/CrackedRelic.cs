@@ -9,7 +9,7 @@ namespace YABSSM.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Cracked Relic");
-            Tooltip.SetDefault("A clay tablet thrumming with energy");
+            Tooltip.SetDefault("A clay tablet thrumming with energy\nInstantly summons the impending doom");
         }
 
         public override void SetDefaults()

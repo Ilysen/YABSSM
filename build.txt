@@ -1,4 +1,4 @@
 author = Ilysen
-version = 0.4
+version = 1.0.0.0
 displayName = Yet Another Boss Summon Shop
-homepage = https://github.com/Xhuis/YABSSM
+homepage = https://forums.terraria.org/index.php?threads/avas-mods-thaumaturgy-challenge-runes.81892/

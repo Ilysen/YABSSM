@@ -9,7 +9,7 @@ namespace YABSSM.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Peppery Fruit");
-            Tooltip.SetDefault("Its aroma may attract giant plants");
+            Tooltip.SetDefault("Its aroma may attract giant plants\nSummons Plantera");
         }
 
         public override void SetDefaults()
