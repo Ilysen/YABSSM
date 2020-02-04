@@ -8,7 +8,17 @@ If you have a mod like Calamity that already has this function built in, you won
 
 # Changelog
 
+### Feb. 4, 2020
+
+#### 1.0.0.4
+
+* Changed the tooltip of the Bunny to explain its mechanics more accurately.
+
 ### Aug. 7, 2019
+
+#### 1.0.0.3
+
+* The Cracked Sigil is now available after defeating the Lunatic Cultist, not the Moon Lord. I wouldn't wish Lunar Event grinding on anyone.
 
 #### 1.0.0.2
 

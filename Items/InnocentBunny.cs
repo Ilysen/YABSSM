@@ -10,7 +10,7 @@ namespace YABSSM.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Innocent, Helpless Bunny");
-            Tooltip.SetDefault("Irresistible to evil demons\nSummons the Wall of Flesh, approaching from the left");
+            Tooltip.SetDefault("Irresistible to evil demons\nSummons the Wall of Flesh, approaching from whichever side of the world you're on");
         }
 
         public override void SetDefaults()
@@ -18,7 +18,7 @@ namespace YABSSM.Items
             item.width = 28;
             item.height = 26;
             item.maxStack = 20;
-            item.value = Item.sellPrice(0, 0, 1, 0);
+            item.value = Item.sellPrice(0, 0, 5, 0);
             item.rare = 5;
             item.useAnimation = 30;
             item.useTime = 30;
