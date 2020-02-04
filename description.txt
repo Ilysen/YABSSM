@@ -1,6 +1,6 @@
-YABSS is a simple mod that makes the Clothier sell boss summoning items when you defeat the respective vanilla boss. The price for these items depends on the difficulty of the boss and placement for progression.
+YABSS is a simple mod that makes a town NPC sell boss summoning items when you defeat the respective vanilla boss. The price for these items depends on the difficulty of the boss and placement for progression.
 
-Skeletron isn't included, since he serves primarily as a gateway boss, with little worthwhile loot.
+For the best cross-mod compatability, the NPC that sells summoning items is configurable to your preference. In the mod config, you can choose any of the pre-Hardmode town NPCs with a shop. It defaults to the Clothier.
 
 After defeating the Wall of Flesh, he will sell Innocent, Helpless Bunnies that can summon the Wall of Flesh without murdering the Guide. After defeating Plantera, he will sell a Peppery Fruit that summons her without need of a bulb. Finally, downing the Moon Lord will cause him to sell Cracked Relics that summon him instantly instead of after a delay.
 

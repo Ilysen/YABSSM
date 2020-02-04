@@ -10,6 +10,11 @@ If you have a mod like Calamity that already has this function built in, you won
 
 ### Feb. 4, 2020
 
+#### 1.0.0.6
+
+* Removed an erroneous statement from the description stating that clothier voodoo dolls weren't included (which they currently are!)
+* Added a config option to change the NPC that sells boss summons.
+
 #### 1.0.0.4
 
 * Changed the tooltip of the Bunny to explain its mechanics more accurately.

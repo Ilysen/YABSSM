@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace YABSSM
 {
@@ -11,7 +12,8 @@ namespace YABSSM
 	{
 		public override void SetupShop(int type, Chest shop, ref int nextSlot)
 		{
-			if (type == NPCID.Clothier)
+			YABSSMConfig config = GetInstance<YABSSMConfig>();
+			if ((int)config.vendorNPC == type)
 			{
 				if (NPC.downedSlimeKing)
 				{
