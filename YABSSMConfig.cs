@@ -8,25 +8,28 @@ namespace YABSSM
 	{
 		public enum PossibleNPCs : short
 		{
-			Clothier = NPCID.Clothier,
-			Dryad = NPCID.Dryad,
-			Merchant = NPCID.Merchant,
-			Demolitionist = NPCID.Demolitionist,
-			DyeTrader = NPCID.DyeTrader,
 			ArmsDealer = NPCID.ArmsDealer,
-			Stylist = NPCID.Stylist,
-			Painter = NPCID.Painter,
+			Clothier = NPCID.Clothier,
+			Demolitionist = NPCID.Demolitionist,
+			Dryad = NPCID.Dryad,
+			DyeTrader = NPCID.DyeTrader,
 			GoblinTinkerer = NPCID.GoblinTinkerer,
-			WitchDoctor = NPCID.WitchDoctor,
+			Golfer = NPCID.Golfer,
 			Mechanic = NPCID.Mechanic,
-			PartyGirl = NPCID.PartyGirl
+			Merchant = NPCID.Merchant,
+			Painter = NPCID.Painter,
+			PartyGirl = NPCID.PartyGirl,
+			Stylist = NPCID.Stylist,
+			WitchDoctor = NPCID.WitchDoctor,
+			Zoologist = NPCID.BestiaryGirl,
 		}
 
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 
-		[Label("Vendor NPC")]
-		[Tooltip("Dictates which town NPC sells boss summon items.")]
-		[DefaultValue(PossibleNPCs.Clothier)]
+		[DefaultValue(PossibleNPCs.Dryad)]
 		public PossibleNPCs vendorNPC;
+
+		[DefaultValue(false)]
+		public bool alternateProgression;
 	}
 }

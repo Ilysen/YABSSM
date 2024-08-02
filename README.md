@@ -1,12 +1,21 @@
 # Yet Another Boss Summon Shop Mod
 
-YABSS is a simple mod that makes the Clothier sell boss summoning items when you defeat the respective vanilla boss. The price for these items depends on the difficulty of the boss and placement for progression.
+YABSS (pronounced "yabs) adds vanilla boss summoning items to a town NPC when you defeat their respective boss. For cross-mod compatibility, the NPC that sells the items can be configured to any pre-hardmode NPC in the base game, but defaults to the Dryad. Also adds purchasable instant summoning items for the following bosses: Wall of Flesh, Plantera, Empress of Light, Moon Lord.
 
-After defeating the Wall of Flesh, he will sell Innocent, Helpless Bunnies that can summon the Wall of Flesh without murdering the Guide. After defeating Plantera, he will sell a Peppery Fruit that summons her without need of a bulb. Finally, downing the Moon Lord will cause him to sell Cracked Relics that summon him instantly instead of after a delay.
+If you have a mod like Calamity that already has this function built in, you probably won't need this one!
 
-If you have a mod like Calamity that already has this function built in, you won't need this mod.
+Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879]Shop Expander[/link] to prevent shop overflow.
+
+YABSS is licensed under the [GNU General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in [LICENSE.md](LICENSE.md). Code prior to commit `d51d06d0bb0886833797951203f62e15f6f61827` is licensed under the [MIT License](https://opensource.org/license/mit/) instead.
 
 # Changelog
+
+### August 2, 2024
+
+#### 1.1
+Rise from your grave! Note: 1.1 onwards is licensed under GNU General Public License v3. Version 1.0 remains licensed under the MIT License.
+* Updated to work with game version 1.4.4.
+* Added an alternate progression mode, toggled in the config, that causes spawn items to unlock for bosses that are next in progression instead of only once they've been defeated. This should allow for buying items for bosses that you have yet to beat, but are up next in the list.
 
 ### Feb. 4, 2020
 

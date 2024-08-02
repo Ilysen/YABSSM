@@ -2,4 +2,6 @@ YABSS (pronounced "yabs") adds vanilla boss summoning items to a town NPC when y
 
 If you have a mod like Calamity that already has this function built in, you probably won't need this one!
 
-Requires Shop Expander to prevent shop overflow.
+Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879]Shop Expander[/link] to prevent shop overflow.
+
+You can find this mod's source code on [url=https://github.com/Ilysen/YABSSM]GitHub[/link], under the GPL v3 license.

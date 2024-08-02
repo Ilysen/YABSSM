@@ -1,0 +1,51 @@
+﻿using Terraria;
+using Terraria.Audio;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace YABSSM.Content.Items
+{
+	public class InnocentBunny : ModItem
+	{
+		public override void SetStaticDefaults()
+		{
+			Item.ResearchUnlockCount = 3;
+			ItemID.Sets.SortingPriorityBossSpawns[Type] = 12;
+		}
+
+		public override void SetDefaults()
+		{
+			Item.width = 28;
+			Item.height = 26;
+			Item.maxStack = 20;
+			Item.rare = ItemRarityID.Pink;
+			Item.useAnimation = 30;
+			Item.useTime = 30;
+			Item.useStyle = ItemUseStyleID.HoldUp;
+			Item.consumable = true;
+		}
+
+		public override void ModifyResearchSorting(ref ContentSamples.CreativeHelper.ItemGroup itemGroup)
+		{
+			itemGroup = ContentSamples.CreativeHelper.ItemGroup.BossSpawners;
+		}
+
+		public override bool CanUseItem(Player player)
+		{
+			return player.ZoneUnderworldHeight && !NPC.AnyNPCs(NPCID.WallofFlesh);
+		}
+
+		public override bool? UseItem(Player player)
+		{
+			if (player.whoAmI == Main.myPlayer)
+			{
+				SoundEngine.PlaySound(SoundID.Roar, player.position);
+				if (Main.netMode != NetmodeID.MultiplayerClient)
+					NPC.SpawnWOF(player.position);
+				else
+					NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: NPCID.WallofFlesh);
+			}
+			return null;
+		}
+	}
+}
