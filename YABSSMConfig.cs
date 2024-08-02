@@ -30,6 +30,7 @@ namespace YABSSM
 		public PossibleNPCs vendorNPC;
 
 		[DefaultValue(false)]
+		[ReloadRequired]
 		public bool alternateProgression;
 	}
 }

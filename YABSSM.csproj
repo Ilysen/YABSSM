@@ -7,10 +7,14 @@
 	<PropertyGroup>
 		
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Content\Items\EepyLacewing.png" />
+	  <None Remove="description_workshop.txt" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Localization\" />
+	</ItemGroup>
 
 	<!-- References -->
-	<ItemGroup>
-		
-	</ItemGroup>
 
 </Project>

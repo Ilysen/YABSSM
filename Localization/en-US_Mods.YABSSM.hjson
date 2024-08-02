@@ -32,15 +32,15 @@ Configs: {
 	YABSSMConfig: {
 		vendorNPC: {
 			Label: Vendor NPC
-			Tooltip: Dictates which town NPC sells boss summon items.
+			Tooltip: Dictates which town NPC sells boss summon items
 		}
 
 		alternateProgression: {
 			Label: Alternate unlock criteria
-			Tooltip: Causes spawn items to appear when bosses are next up in progression, instead of once they've been downed.
+			Tooltip: Causes spawn items to appear when bosses are next up in progression, instead of once they've been downed
 		}
 
-		DisplayName: Config
+		DisplayName: YABSS Config
 	}
 
 	PossibleNPCs: {

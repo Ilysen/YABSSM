@@ -5,8 +5,7 @@ using static Terraria.ModLoader.ModContent;
 
 namespace YABSSM
 {
-	internal class YABSSM : Mod
-	{ }
+	internal class YABSSM : Mod { }
 
 	internal class YABSSMNPC : GlobalNPC
 	{
@@ -21,19 +20,19 @@ namespace YABSSM
 				if (NPC.downedBoss1 || config.alternateProgression)
 					shop.Add(new Item(ItemID.SuspiciousLookingEye) { shopCustomPrice = Item.buyPrice(gold: 1) });
 
-				if (NPC.downedBoss2 || (!config.alternateProgression && NPC.downedBoss1))
+				if (NPC.downedBoss2 || (config.alternateProgression && NPC.downedBoss1))
 					shop.Add(new Item(WorldGen.crimson ? ItemID.BloodySpine : ItemID.WormFood) { shopCustomPrice = Item.buyPrice(gold: 1) });
 
-				if (NPC.downedBoss3 || (!config.alternateProgression && NPC.downedBoss2))
+				if (NPC.downedBoss3 || (config.alternateProgression && NPC.downedBoss2))
 					shop.Add(new Item(ItemID.ClothierVoodooDoll) { shopCustomPrice = Item.buyPrice(gold: 1) });
 
-				if (NPC.downedDeerclops || !!config.alternateProgression)
+				if (NPC.downedDeerclops || (config.alternateProgression && NPC.downedBoss3))
 					shop.Add(new Item(ItemID.DeerThing) { shopCustomPrice = Item.buyPrice(gold: 5) });
 
-				if (NPC.downedQueenBee || (!config.alternateProgression && NPC.downedBoss3))
+				if (NPC.downedQueenBee || (config.alternateProgression && NPC.downedBoss3))
 					shop.Add(new Item(ItemID.Abeemination) { shopCustomPrice = Item.buyPrice(gold: 1) });
 
-				if (Main.hardMode || (!config.alternateProgression && NPC.downedQueenBee))
+				if (Main.hardMode || (config.alternateProgression && NPC.downedQueenBee))
 					shop.Add(new Item(ItemType<Content.Items.InnocentBunny>()) { shopCustomPrice = Item.buyPrice(gold: 1) });
 
 				if (NPC.downedQueenSlime || (config.alternateProgression && Main.hardMode))
