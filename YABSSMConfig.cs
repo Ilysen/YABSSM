@@ -30,7 +30,10 @@ namespace YABSSM
 		public PossibleNPCs vendorNPC;
 
 		[DefaultValue(false)]
-		[ReloadRequired]
 		public bool alternateProgression;
+
+		/*[DefaultValue(false)]
+		[ReloadRequired]
+		public bool enableEasterEggs;*/
 	}
 }

@@ -33,7 +33,7 @@ namespace YABSSM.Content.Items
 
 		public override bool CanUseItem(Player player)
 		{
-			return Main.hardMode && player.ZoneHallow && !NPC.AnyNPCs(636);
+			return Main.hardMode && player.ZoneHallow && !NPC.AnyNPCs(NPCID.HallowBoss);
 		}
 
 		public override bool? UseItem(Player player)
@@ -49,7 +49,7 @@ namespace YABSSM.Content.Items
 				else
 					NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: NPCID.HallowBoss);
 			}
-			return null;
+			return true;
 		}
 	}
 }

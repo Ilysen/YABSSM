@@ -5,3 +5,14 @@ If you have a mod like Calamity that already has this function built in, you pro
 Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2828370879]Shop Expander[/link] to prevent shop overflow.
 
 You can find this mod's source code on [url=https://github.com/Ilysen/YABSSM]GitHub[/link], under the GPL v3 license.
+
+By default, summon items are available only after killing the respective boss, but the config has an alternate progression option that unlocks them at different times. This follows the following conditions:
+* Slime Crowns and Suspicious Looking Eyes are available immediately
+* Downing the Eye of Cthulhu unlocks Worm Food or Bloody Spines
+* Downing the evil boss unlocks Clothier Voodoo Dolls
+* Downing Skeletron unlocks Abeeminations and Deer Things
+* Downing the Queen Bee unlocks Helpless Bunnies (Wall of Flesh)
+* Gelatin Crystals and mech boss summons appear immediately at the start of hardmode
+* Downing the mech bosses unlocks Peppery Fruits (Plantera)
+* Downing Plantera unlocks Eepy Lacewings (Empress of Light), Lihzahrd Power Cells, Truffle Worms, Pumpkin Moon Medallions, and Naughty Presents
+* Downing the Lunatic Cultist unlocks Cracked Relics

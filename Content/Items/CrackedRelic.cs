@@ -46,7 +46,7 @@ namespace YABSSM.Content.Items
 				else
 					NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: NPCID.MoonLordCore);
 			}
-			return null;
+			return true;
 		}
 	}
 }

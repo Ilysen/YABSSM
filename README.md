@@ -1,6 +1,6 @@
-# Yet Another Boss Summon Shop Mod
+# Yet Another Boss Summon Shop
 
-YABSS (pronounced "yabs) adds vanilla boss summoning items to a town NPC when you defeat their respective boss. For cross-mod compatibility, the NPC that sells the items can be configured to any pre-hardmode NPC in the base game, but defaults to the Dryad. Also adds purchasable instant summoning items for the following bosses: Wall of Flesh, Plantera, Empress of Light, Moon Lord.
+YABSS (pronounced "yabs") adds vanilla boss summoning items to a town NPC when you defeat their respective boss. For cross-mod compatibility, the NPC that sells the items can be configured to any pre-hardmode NPC in the base game, but defaults to the Dryad. Also adds purchasable instant summoning items for the following bosses: Wall of Flesh, Plantera, Empress of Light, Moon Lord.
 
 If you have a mod like Calamity that already has this function built in, you probably won't need this one!
 
@@ -16,6 +16,7 @@ YABSS is licensed under the [GNU General Public License v3](http://www.gnu.org/l
 Rise from your grave! Note: 1.1 onwards is licensed under GNU General Public License v3. Version 1.0 remains licensed under the MIT License.
 * Updated to work with game version 1.4.4.
 * Added an alternate progression mode, toggled in the config, that causes spawn items to unlock for bosses that are next in progression instead of only once they've been defeated. This should allow for buying items for bosses that you have yet to beat, but are up next in the list.
+* Added the Clothier Imitation Plushie to the shop, used to summon Skeletron even if no Clothier is present.
 
 ### Feb. 4, 2020
 

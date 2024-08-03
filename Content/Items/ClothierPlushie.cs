@@ -1,11 +1,12 @@
-﻿using Terraria;
+﻿using System.Security.Cryptography.X509Certificates;
+using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace YABSSM.Content.Items
 {
-	public class InnocentBunny : ModItem
+	public class ClothierPlushie : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -15,10 +16,10 @@ namespace YABSSM.Content.Items
 
 		public override void SetDefaults()
 		{
-			Item.width = 28;
-			Item.height = 26;
+			Item.width = 40;
+			Item.height = 40;
 			Item.maxStack = 20;
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.Blue;
 			Item.useAnimation = 30;
 			Item.useTime = 30;
 			Item.useStyle = ItemUseStyleID.HoldUp;
@@ -32,7 +33,7 @@ namespace YABSSM.Content.Items
 
 		public override bool CanUseItem(Player player)
 		{
-			return player.ZoneUnderworldHeight && !NPC.AnyNPCs(NPCID.WallofFlesh);
+			return !NPC.AnyNPCs(NPCID.SkeletronHead) && !Main.dayTime;
 		}
 
 		public override bool? UseItem(Player player)
@@ -40,10 +41,11 @@ namespace YABSSM.Content.Items
 			if (player.whoAmI == Main.myPlayer)
 			{
 				SoundEngine.PlaySound(SoundID.Roar, player.position);
+
 				if (Main.netMode != NetmodeID.MultiplayerClient)
-					NPC.SpawnWOF(player.position);
+					NPC.SpawnOnPlayer(player.whoAmI, NPCID.SkeletronHead);
 				else
-					NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: NPCID.WallofFlesh);
+					NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: NPCID.SkeletronHead);
 			}
 			return true;
 		}

@@ -1,6 +1,6 @@
 Items: {
 	InnocentBunny: {
-		DisplayName: Innocent Bunny
+		DisplayName: Helpless Bunny
 		Tooltip:
 			'''
 			Irresistible to ancient guardians
@@ -26,6 +26,24 @@ Items: {
 		DisplayName: Peppery Fruit
 		Tooltip: Summons Plantera
 	}
+
+	ClothierPlushie: {
+		Tooltip:
+			'''
+			Good enough for evil curses
+			Summons Skeletron
+			'''
+		DisplayName: Clothier Imitation Plushie
+	}
+
+	ClothierFumo: {
+		Tooltip:
+			'''
+			get real
+			(Summons Skeletron)
+			'''
+		DisplayName: fumo
+	}
 }
 
 Configs: {
@@ -41,6 +59,11 @@ Configs: {
 		}
 
 		DisplayName: YABSS Config
+
+		enableEasterEggs: {
+			Label: Enable easter eggs
+			Tooltip: ""
+		}
 	}
 
 	PossibleNPCs: {
@@ -60,4 +83,25 @@ Configs: {
 		Zoologist.Label: Zoologist
 		Golfer.Label: Golfer
 	}
+}
+
+Conditions: {
+	SellKingSlime: Mods.YABSSM.Conditions.SellKingSlime
+	SellEoC: Mods.YABSSM.Conditions.SellEoC
+	SellEvilBoss: Mods.YABSSM.Conditions.SellEvilBoss
+	SellSkeletron: Mods.YABSSM.Conditions.SellSkeletron
+	SellDeerclops: Mods.YABSSM.Conditions.SellDeerclops
+	SellQueenBee: Mods.YABSSM.Conditions.SellQueenBee
+	SellWoF: Mods.YABSSM.Conditions.SellWoF
+	SellQueenSlime: Mods.YABSSM.Conditions.SellQueenSlime
+	SellDestroyer: Mods.YABSSM.Conditions.SellDestroyer
+	SellTwins: Mods.YABSSM.Conditions.SellTwins
+	SellSkeletronPrime: Mods.YABSSM.Conditions.SellSkeletronPrime
+	SellPlantera: Mods.YABSSM.Conditions.SellPlantera
+	SellEoL: Mods.YABSSM.Conditions.SellEoL
+	SellGolem: Mods.YABSSM.Conditions.SellGolem
+	SellFishron: Mods.YABSSM.Conditions.SellFishron
+	SellPumpkinMoon: Mods.YABSSM.Conditions.SellPumpkinMoon
+	SellFrostMoon: Mods.YABSSM.Conditions.SellFrostMoon
+	SellMoonLord: Mods.YABSSM.Conditions.SellMoonLord
 }
